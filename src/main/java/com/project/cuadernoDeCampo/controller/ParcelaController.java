@@ -1,6 +1,5 @@
 package com.project.cuadernoDeCampo.controller;
 
-import com.project.cuadernoDeCampo.repository.ParcelaRepository;
 import com.project.cuadernoDeCampo.service.ParcelaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
