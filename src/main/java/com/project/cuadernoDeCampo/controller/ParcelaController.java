@@ -22,8 +22,6 @@ public class ParcelaController {
 
     @GetMapping("/parcelas")
     public List<Parcela> findAll(){
-        logger.info("msg");
-        logger.debug("debuf msg");
         return parcela_service.getAllParcelas();
     }
 

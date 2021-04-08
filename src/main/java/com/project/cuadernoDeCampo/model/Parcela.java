@@ -171,4 +171,23 @@ public class Parcela {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " id_parcela='" + getId_parcela() + "'" +
+                ", nombre_parcela='" + getNombre_parcela() + "'" +
+                ", cod_provincia='" + getCod_provincia() + "'" +
+                ", term_municipal='" + getTermino_municipal() + "'" +
+                ", cod_agregado='" + getCodigo_agregado() + "'" +
+                ", zona='" + getZona() + "'" +
+                ", numero_poligono='" + getNumero_poligono() + "'" +
+                ", numero_parcela='" + getNumero_parcela() + "'" +
+                ", numero_recinto='" + getNumero_recinto() + "'" +
+                ", superficie='" + getSuperficie() + "'" +
+                ", especie='" + getEspecie() + "'" +
+                ", variedad='" + getVariedad() + "'" +
+                ", tipo='" + getTipo() + "'" +
+                "}";
+    }
 }
