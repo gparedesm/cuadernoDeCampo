@@ -22,7 +22,7 @@ public class LluviaService {
     }
 
     public Lluvia getLluvia(int id) {
-        LOG.info("Getting the parcela with given id:" + id);
+        LOG.info("Getting Lluvia with given id:" + id);
         return lluviaRepository.findById(id);
     }
 

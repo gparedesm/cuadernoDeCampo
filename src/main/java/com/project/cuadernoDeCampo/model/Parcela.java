@@ -3,6 +3,7 @@ package com.project.cuadernoDeCampo.model;
 import javax.persistence.Id;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="parcelas")

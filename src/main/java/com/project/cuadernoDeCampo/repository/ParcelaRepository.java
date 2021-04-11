@@ -20,4 +20,5 @@ public interface ParcelaRepository extends CrudRepository<Parcela, Integer> {
 
     @Query("SELECT p FROM Parcela p WHERE p.nombre_parcela like :name%")
     List<Parcela> findByCustomName(String name);
+
 }

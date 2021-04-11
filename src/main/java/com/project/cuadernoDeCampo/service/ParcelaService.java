@@ -27,18 +27,22 @@ public class ParcelaService {
     }
 
     public List<Parcela> getAllParcelas(){
+        LOG.info("Getting ALL Parcelas");
         return parcelaRepository.findAll();
     }
 
     public List<Parcela> getParcelasLikeName(String name){
+        LOG.info("Get parcelas named like: " + name + "*");
         return parcelaRepository.findByCustomName(name);
     }
 
     public Parcela saveParcela(Parcela parcela){
+        LOG.info("Save Parcela: " + parcela.toString());
         return parcelaRepository.save(parcela);
     }
 
     public void deleteParcelaId(int id){
+        LOG.info("Parcela id: " + id + " deleted");
         parcelaRepository.deleteById(id);
     }
 }
