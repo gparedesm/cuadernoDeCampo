@@ -18,7 +18,7 @@ public class MineralController {
     private MineralService mineralService;
     Logger logger = LoggerFactory.getLogger(MineralController.class);
 
-    @GetMapping("/mineral")
+    @GetMapping("/minerales")
     public List<Mineral> findAll(){
         return mineralService.getAllMinerales();
     }

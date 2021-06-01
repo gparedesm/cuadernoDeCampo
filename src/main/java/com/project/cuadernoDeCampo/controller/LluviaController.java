@@ -19,7 +19,7 @@ public class LluviaController {
     Logger logger = LoggerFactory.getLogger(LluviaController.class);
 
 
-    @GetMapping("/lluvia")
+    @GetMapping("/lluvias")
     public List<Lluvia> findAll(){
         return lluvia_service.getAllLluvias();
     }

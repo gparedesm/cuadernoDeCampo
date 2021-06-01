@@ -25,27 +25,27 @@ public class SulfatoController {
         return sulfato_service.getAllSulfatos();
     }
 
-    @GetMapping("/sulfatos/{id_sulfato}")
+    @GetMapping("/sulfato/{id_sulfato}")
     public Sulfato getSulfato(@PathVariable int id_sulfato){
         return sulfato_service.getSulfato(id_sulfato);
     }
 
-    @GetMapping("/sulfato/name/{name}")
+    @GetMapping("/sulfatos/name/{name}")
     public List<Sulfato> getSulfatoName(@PathVariable String name){
         return sulfato_service.getSulfatoLikeName(name);
     }
 
-    @PostMapping(value="/sulfato")
+    @PostMapping(value="/sulfatos")
     public Sulfato addSulfato(@RequestBody Sulfato sulfato) {
         return sulfato_service.saveSulfato(sulfato);
     }
 
-    @PutMapping(value="/sulfato")
+    @PutMapping(value="/sulfatos")
     public Sulfato updateSulfato(@RequestBody Sulfato sulfato) {
         return sulfato_service.saveSulfato(sulfato);
     }
 
-    @DeleteMapping(value="/sulfato/{id_sulfato}")
+    @DeleteMapping(value="/sulfatos/{id_sulfato}")
     public String deleteSulfato(@PathVariable int id_sulfato){
         sulfato_service.deleteSulfatoId(id_sulfato);
         return "Sulfato " + id_sulfato + " deleted.";

@@ -50,6 +50,9 @@ public class Parcela {
     @Column(name="tipo")
     private String tipo;
 
+    @Column(name="ano_registro")
+    private int ano_registro;
+
     public Parcela() {
     }
 
@@ -173,6 +176,14 @@ public class Parcela {
         this.tipo = tipo;
     }
 
+    public int getAno_registro() {
+        return ano_registro;
+    }
+
+    public void setAno_registro(int ano_registro) {
+        this.ano_registro = ano_registro;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -189,6 +200,7 @@ public class Parcela {
                 ", especie='" + getEspecie() + "'" +
                 ", variedad='" + getVariedad() + "'" +
                 ", tipo='" + getTipo() + "'" +
+                ", ano_registro='" + getAno_registro() + "'" +
                 "}";
     }
 }

@@ -25,7 +25,7 @@ public class ParcelaController {
         return parcela_service.getAllParcelas();
     }
 
-    @GetMapping("/parcelas/{id_parcela}")
+    @GetMapping("/parcela/{id_parcela}")
     public Parcela getParcelas(@PathVariable int id_parcela){
         return parcela_service.getParcela(id_parcela);
     }
@@ -35,17 +35,17 @@ public class ParcelaController {
         return parcela_service.getParcelasLikeName(name);
     }
     
-    @PostMapping(value="/parcelas")
+    @PostMapping(value="/parcela")
     public Parcela addParcela(@RequestBody Parcela parcela) {
         return parcela_service.saveParcela(parcela);
     }
 
-    @PutMapping(value="/parcelas")
+    @PutMapping(value="/parcela")
     public Parcela updateParcela(@RequestBody Parcela parcela) {
         return parcela_service.saveParcela(parcela);
     }
 
-    @DeleteMapping(value="/parcelas/{id_parcela}")
+    @DeleteMapping(value="/parcela/{id_parcela}")
     public String deleteParcela(@PathVariable int id_parcela){
         parcela_service.deleteParcelaId(id_parcela);
         return "Parcela " + id_parcela + " deleted.";
